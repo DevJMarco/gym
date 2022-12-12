@@ -169,3 +169,27 @@ const sendEmail = (e) =>{
 }
 
 contactForm.addEventListener('submit', sendEmail)
+
+
+/* □□□□□□□□□□□□□□□□□□□□□□□□□□□□ PRICING MODAL □□□□□□□□□□□□□□□□□□□□□□□□□□□□ */
+// const modalViews = document.querySelectorAll('.pricing__modal'),
+//       modalBtns = document.querySelectorAll('.pricing__button'),
+//       modalClose = document.querySelectorAll('.pricing__modal-close')
+
+// let modal = function(modalClick){
+//     modalViews[modalClick].classList.add('active-modal')
+// }
+
+// modalBtns.forEach((modalBtns, i) => {
+//     modalBtns.addEventListener('click', () =>{
+//         modal(i)
+//     })
+// })
+
+// modalClose.forEach((modalClose) => {
+//     modalClose.addEventListener('click', () =>{
+//         modalViews.forEach((modalViews) =>{
+//             modalViews.classList.remove('active-modal')
+//         })
+//     })
+// })

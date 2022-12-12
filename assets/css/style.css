@@ -35,6 +35,7 @@
     /* =========== z index =========== */
     --z-tooltip: 10;
     --z-fixed: 100;
+    --z-modal: 1000;
 }
 /* Responsive typography */
 @media screen and (min-width: 1024px){
@@ -509,6 +510,10 @@ img{
     margin: 0 auto;
 }
 /* =================== PRICING =================== */
+.choose{
+    position: relative;
+}
+
 .pricing__container{
     grid-template-columns: 285px;
     justify-content: center;
@@ -525,6 +530,7 @@ img{
     row-gap: 2rem;
     background-color: hsla(79, 6%, 64%, .07);
     padding: 2rem 2.5rem;
+    position: relative;
 }
 
 .pricing__img{
@@ -595,6 +601,52 @@ img{
 .pricing__card-active .pricing__number,
 .pricing__card-active .pricing__item{
     color: var(--title-color-black);
+}
+
+.pricing__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: var(--title-color-black);
+    /* backdrop-filter: blur(2px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.pricing__modal-content{
+    position: absolute;
+    background-color: var(--first-color-gray);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+/* mejorar grid de esta clase */
+.pricing__modal-methods{
+    row-gap: .5rem;
+}
+
+.pricing__modal-close{
+    position: absolute;
+    top: .8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.pricing__modal-close{
+    color: red;
+}
+
+.active-modal{
+    opacity: 1;
+    visibility: visible;
 }
 
 /* =================== CALCULATE =================== */
@@ -844,7 +896,8 @@ img{
     } */
 
     .pricing__card{
-        padding: 1.2rem;
+        padding: 1rem;
+        margin: 1.2rem;
     }
 
     .footer__content{
@@ -1069,6 +1122,9 @@ img{
     .choose__description{
         width: 418px;
         margin-bottom: 3.5rem;
+    }
+    #choose .section__title-border{
+        white-space: nowrap;
     }
 
     .pricing__container{

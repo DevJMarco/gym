@@ -66,7 +66,7 @@
                         Aquí te ayudaremos a moldear y construir tu cuerpo ideal 
                         para que puedas vivir tu vida al máximo.
                     </p>
-                    <a href="#" class="button button__flex">
+                    <a href="#program" class="button button__flex">
                         Empecemos <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -196,7 +196,7 @@
         </section>
         <!-- =================== PRICING =================== -->
         <section class="choose section" id="pricing">
-            <div class="container">
+            <!-- <div class="container"> -->
                 <div class="section__data">
                     <h2 class="section__subtitle">Precios</h2>
                     <div class="section__titles">
@@ -205,7 +205,8 @@
                     </div>
                 </div>
                 <div class="pricing__container grid">
-                    <article class="pricing__card">
+                    <!-- =================== PRICE 1 =================== -->
+                    <article class="pricing__card" id="basic">
                         <header class="pricing__header">
                             <div class="pricing__shape">
                                 <img src="./assets/img/pricing1.png" alt="pricing image" class="pricing__img">
@@ -230,12 +231,35 @@
                                 <i class="ri-checkbox-circle-line pricing__item-opacity"></i> 01 Creatina
                             </li>
                         </ul>
-                        <a href="#" class="button button__flex pricing__button">
+                        <a class="button button__flex pricing__button">
                             Comprar Ahora <i class="ri-arrow-right-line"></i>
                         </a>
+                        <!-- TESTING MODAL -->
+                        <!-- <div class="pricing__modal">
+                            <div class="pricing__modal-content">
+                                <h4 class="pricing__modal-title">Por el momento no es posible realizar compras en la pagina.</h4>
+                                <i class="ri-close-line pricing__modal-close"></i>
+                                
+                                <p>Cualquier compra se puede realizar presencialmente en el gimnasio. Contamos con los siguientes metodos de pago:</p>
+                                <ul class="pricing__modal-methods grid">
+                                    <li class="pricing__modal-method">
+                                        <i class="ri-checkbox-circle-line pricing__modal-icon"></i> Efectivo
+                                        
+                                    </li>
+                                    <li class="pricing__modal-method">
+                                        <i class="ri-checkbox-circle-line pricing__modal-icon"></i> Mercado Pago
+                                        
+                                    </li>
+                                    <li class="pricing__modal-method">
+                                        <i class="ri-checkbox-circle-line pricing__modal-icon"></i> Tarjeta de credito/debito
+                                        
+                                    </li>    
+                                </ul>
+                            </div>
+                        </div> -->
                     </article>
 
-                    <article class="pricing__card pricing__card-active">
+                    <article class="pricing__card pricing__card-active" id="standar">
                         <header class="pricing__header">
                             <div class="pricing__shape">
                                 <img src="./assets/img/pricing2.png" alt="pricing image" class="pricing__img">
@@ -265,7 +289,7 @@
                         </a>
                     </article>
                     
-                    <article class="pricing__card">
+                    <article class="pricing__card" id="premium">
                         <header class="pricing__header">
                             <div class="pricing__shape">
                                 <img src="./assets/img/pricing3.png" alt="pricing image" class="pricing__img">
@@ -295,7 +319,7 @@
                         </a>
                     </article>
                 </div>
-            </div>
+            <!-- </div> -->
         </section>
         <!-- =================== CALCULATE =================== -->
         <section class="calculate section">
@@ -306,7 +330,7 @@
                         <h1 class="section__title">TU IMC</h1>
                     </div>
                     <p class="calculate__description">
-                        La calculadora del índice de masa corporal (IMC) calcula 
+                        La calculadora del índice de masa corporal <a href="https://farmacialavernia.com/wp-content/uploads/2016/05/Calcula-tu-Peso-Ideal-y-IMC1.png" target="_blank">(IMC)</a> calcula 
                         el índice de masa corporal a partir del peso y la altura.
                     </p>
                     <form action="" class="calculate__form" id="calculate-form">
@@ -369,18 +393,18 @@
                     <h3 class="footer__title">PRECIOS</h3>
                     <ul class="footer__links">
                         <li>
-                            <a href="" class="footer__link">Basico</a>
+                            <a href="#basic" class="footer__link">Basico</a>
                         </li>
                         <li>
-                            <a href="" class="footer__link">Estandar</a>
+                            <a href="#standar" class="footer__link">Estandar</a>
                         </li>
                         <li>
-                            <a href="" class="footer__link">Premium</a>
+                            <a href="#premium" class="footer__link">Premium</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="footer__title">COMPANIA</h3>
+                    <h3 class="footer__title">NOSOTROS</h3>
                     <ul class="footer__links">
                         <li>
                             <a href="" class="footer__link">Sobre nosotros</a>
